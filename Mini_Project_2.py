@@ -1,11 +1,5 @@
 #Calculator with History
 
-# with open("student.txt", "r") as f:
-#     for line in f:
-#         name, grade = line.strip().split(",")
-#         loaded_students.append(Student(name, grade))
-
-
 history_file = "calc_history.txt"
 
 def show_history():
