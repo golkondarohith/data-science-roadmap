@@ -20,7 +20,7 @@ total_marks = sum([student[1] for student in students])
 avg_marks = total_marks/len(students)
 highest_marks = max(student[1] for student in students)
 
+top_students = [name for name, marks in students if marks == highest_marks]
 
-
-print(f"The average of the class is {avg_marks} and highest marks are {highest_marks}")
-
+print(f"The average of the class is {avg_marks:.2f} and highest marks are {highest_marks}")
+print(f"Top scorer(s): {', '.join(top_students)} with {highest_marks} marks")
