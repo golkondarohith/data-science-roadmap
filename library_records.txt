@@ -1,3 +1,0 @@
-Book 'English' written by Nick, Available copies: 1
-Book 'English' written by Nick, Available copies: 1
-Book 'Mathematics' written by Euclid, Available copies: 1
