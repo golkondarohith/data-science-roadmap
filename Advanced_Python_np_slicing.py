@@ -8,3 +8,6 @@ print(arr[:])
 print(arr[:4])
 print(arr[::2])
 print(arr[::-1])
+
+#Boolean Masking
+print(arr[arr > 25])
