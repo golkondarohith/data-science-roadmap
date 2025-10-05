@@ -1,0 +1,40 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load dataset
+data = np.genfromtxt('students.csv', delimiter=',', skip_header=1)
+
+# Extract marks (Math, Science, English)
+marks = data[:, 3:]
+
+# --- Normalize each column (subject) ---
+min_vals = np.min(marks, axis=0)
+max_vals = np.max(marks, axis=0)
+normalized_marks = (marks - min_vals) / (max_vals - min_vals)
+
+# --- Visualization ---
+subjects = ['Math', 'Science', 'English']
+students = np.arange(1, len(marks) + 1)
+
+plt.figure(figsize=(10, 5))
+
+# Before normalization
+plt.subplot(1, 2, 1)
+for i in range(3):
+    plt.plot(students, marks[:, i], marker='o', label=subjects[i])
+plt.title("Original Marks")
+plt.xlabel("Student ID")
+plt.ylabel("Score")
+plt.legend()
+
+# After normalization
+plt.subplot(1, 2, 2)
+for i in range(3):
+    plt.plot(students, normalized_marks[:, i], marker='o', label=subjects[i])
+plt.title("Normalized Marks (0–1)")
+plt.xlabel("Student ID")
+plt.ylabel("Normalized Score")
+plt.legend()
+
+plt.tight_layout()
+plt.show()
