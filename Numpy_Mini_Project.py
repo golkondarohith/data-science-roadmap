@@ -56,3 +56,6 @@ max_values = np.max(marks, axis=0)
 
 normalized_marks = (marks - min_values)/(max_values - min_values)
 print("Normalized marks:\n", normalized_marks)
+
+normalized_data = np.hstack((data[:, :3], normalized_marks))
+print(normalized_data)
