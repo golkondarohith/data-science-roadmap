@@ -39,3 +39,12 @@ print(gender_1, "\n")
 
 print("Average of gender_0:\n ", np.mean(gender_0))
 print("Average of gender_1:\n ", np.mean(gender_1))
+
+
+#Correlation between Maths and Sciene
+maths_marks = data[:, 3]
+# print("Maths marks: ", maths_marks)
+science_marks = data[:, 4]
+
+corr_matrix = np.corrcoef(maths_marks, science_marks)
+print("The correlatin of maths and science marks: \n", corr_matrix)
