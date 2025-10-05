@@ -48,3 +48,11 @@ science_marks = data[:, 4]
 
 corr_matrix = np.corrcoef(maths_marks, science_marks)
 print("The correlatin of maths and science marks: \n", corr_matrix)
+
+
+#Normalization
+min_values = np.min(marks, axis=0)
+max_values = np.max(marks, axis=0)
+
+normalized_marks = (marks - min_values)/(max_values - min_values)
+print("Normalized marks:\n", normalized_marks)
