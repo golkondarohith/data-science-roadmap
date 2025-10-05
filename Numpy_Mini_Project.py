@@ -29,3 +29,13 @@ data[inds] = np.take(col_means, inds[1]-3)
 
 print(data)
 
+print("Student with the highest total: \n", np.max(totals))
+
+gender_0 = data[data[:, 2] == 0]
+print(gender_0, "\n")
+
+gender_1 = data[data[:, 2] == 1]
+print(gender_1, "\n")
+
+print("Average of gender_0:\n ", np.mean(gender_0))
+print("Average of gender_1:\n ", np.mean(gender_1))
