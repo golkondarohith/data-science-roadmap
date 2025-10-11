@@ -14,3 +14,9 @@ print("Display Original data: \n", df)
 #Adding a bonus column to the extsting data
 df["Bonus"] = df["Salary"] * 0.1
 print("Displaying the Modified data: \n", df)
+
+
+#Adding column using insert method
+#syntax - df.insert(loc, "Column_Name", data)
+df.insert(0, "Employee_ID", [501, 502, 503, 504, 505, 506, 507, 508] )
+print(df)
