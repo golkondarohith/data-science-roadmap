@@ -14,5 +14,11 @@ print("Display Original data: \n", df)
 #Removing a single row from the dataset(Performance_score)
 #syntax - df.drop(columns = ["Column_Name"], inplace = True)
 
-df.drop(columns = ["Performance_score"], inplace = True)
-print(df)
+# df.drop(columns = ["Performance_score"], inplace = True)
+# print(df)
+
+#Removing a multiple rows from the dataset(Performance_score, Age)
+#syntax - df.drop(columns = ["Column_Name1", "Column_Name2"], inplace = True)
+
+df.drop(columns = ["Performance_score", "Age"], inplace = True)
+print("Modified dataset: \n", df)
