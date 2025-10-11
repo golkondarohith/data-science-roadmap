@@ -12,3 +12,7 @@ df = pd.DataFrame(data)
 
 #Display single column names
 print(df["Name"])
+
+#Displaying multiple columns 
+subset = df[["Name", "Age"]]
+print(subset)
