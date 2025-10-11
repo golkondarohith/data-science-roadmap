@@ -15,4 +15,9 @@ print("Display Original data: \n", df)
 #syntax - .loc[row_index, "Column_Name"] = value
 
 df.loc[0, "Salary"] = 55000
-print(df)
+print("Updating a singel cell value:\n ",df)
+
+#Updating all salaries by 0.5%
+df["Salary"] = df["Salary"] * 1.05
+print("Updating all salaries by 0.5%: \n", df)
+
