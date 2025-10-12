@@ -25,3 +25,7 @@ print("Merged data: \n", merged_inner)
 #Outer join
 merged_outer = pd.merge(df_customers, df_orders, on="Customer_ID", how="outer")
 print("Merged data: \n", merged_outer)
+
+#Left join
+merged_left = pd.merge(df_customers, df_orders, on="Customer_ID", how="left")
+print("Merged data: \n", merged_left)
