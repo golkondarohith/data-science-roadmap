@@ -17,5 +17,11 @@ df_orders = pd.DataFrame(
     }
 )
 
-merged = pd.merge(df_customers, df_orders, on="Customer_ID", how="inner")
-print("Merged data: \n", merged)
+
+#Inner join
+merged_inner = pd.merge(df_customers, df_orders, on="Customer_ID", how="inner")
+print("Merged data: \n", merged_inner)
+
+#Outer join
+merged_outer = pd.merge(df_customers, df_orders, on="Customer_ID", how="outer")
+print("Merged data: \n", merged_outer)
