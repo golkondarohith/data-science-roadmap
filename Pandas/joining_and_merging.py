@@ -33,3 +33,7 @@ print("Merged data: \n", merged_left)
 #Right join
 merged_right = pd.merge(df_customers, df_orders, on="Customer_ID", how="right")
 print("Merged data: \n", merged_right)
+
+#Cross join
+merged_cross = pd.merge(df_customers, df_orders, how="cross")
+print("Merged data: \n", merged_cross)
