@@ -20,3 +20,8 @@ df_region2 = pd.DataFrame(
 #Vertically
 df_vstack = pd.concat([df_region1, df_region2], axis=0, ignore_index=True)
 print("Concatenated Verticallay: \n", df_vstack)
+
+
+#Horizontally
+df_hstack = pd.concat([df_region1, df_region2], axis=1, ignore_index=True)
+print("Concatenated Horizontally: \n", df_hstack)
