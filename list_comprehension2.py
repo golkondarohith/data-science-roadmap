@@ -8,3 +8,8 @@ vowels = "aeiouAEIOU"
 
 vowels_string = [c for c in string if c in vowels]
 print(vowels_string)
+
+# Convert every word in a sentence to uppercase
+sentence = "Python"
+sentence = [c.upper() for c in sentence]
+print(sentence)
