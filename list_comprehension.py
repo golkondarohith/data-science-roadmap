@@ -23,3 +23,9 @@ print("before enumeration", enum)
 enum = [(i, v) for i, v in enumerate(enum)]
 print(enum)
 
+
+# leetcode problem
+nums = [8, 1, 2, 2, 3]
+
+res_nums = [sum(1 for j in nums if j < i) for i in nums]
+print(res_nums)
