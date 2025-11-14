@@ -28,4 +28,6 @@ print(enum)
 nums = [8, 1, 2, 2, 3]
 
 res_nums = [sum(1 for j in nums if j < i) for i in nums]
+res_nums2 = [sum(2 for j in nums if j < i) for i in nums]
 print(res_nums)
+print(res_nums2)
